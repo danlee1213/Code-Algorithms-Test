@@ -11,3 +11,9 @@ Prepare Algorithms Tests
 * But in the local variable, we have to initialize variable as 0, ex)int count[50000] = {0,}
 * Local variable -> goes to stack of the memory -> not enough storage for big array
 * Global variable -> goes to data of the memory -> big enough to store big array
+
+## Selection Sort
+![image](https://user-images.githubusercontent.com/72503871/104643445-69f48a00-56e7-11eb-8a59-8e6f44e3d31a.png)
+
+## Bubble Sort
+![image](https://user-images.githubusercontent.com/72503871/104643560-90b2c080-56e7-11eb-87c9-8ea5301cabaa.png)
