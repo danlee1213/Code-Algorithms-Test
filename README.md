@@ -31,3 +31,30 @@ for(int i=0; i<n-1; ++i){
 ```
 ## Bubble Sort
 ![image](https://user-images.githubusercontent.com/72503871/104643560-90b2c080-56e7-11eb-87c9-8ea5301cabaa.png)
+```C++
+/***Bubble Sort (Ascending Order)***/
+for(int i=0; i<n-1; ++i){
+  for(int j=0; j<n-i-1; ++j){
+    //If previous one is bigger, swap each other
+    if(a[j] > a[j+1]){
+      temp = a[j];
+      a[j] = a[j+1];
+      a[j+1] = temp;
+    }
+  }
+}
+```
+## Insertion Sort
+![image](https://user-images.githubusercontent.com/72503871/104738189-27cb5700-5780-11eb-9e58-5cfbfeb0772c.png)
+```C++
+/***Insertion Sort (Ascending Order)***/
+for(int i=1; i<n; ++i){
+  temp = a[i];
+  for(int j=i-1; j>=0; --j){
+    if(a[j] > temp) a[j+1] = a[j];
+    else break;
+  }
+  a[j+1] = temp; //It tracks the last index no. of j, so temp will be inserted after the last j
+  //ex) if i=1, j=0 and j ends when j=-1, then a[j+1] = a[0] in this case.
+}
+```
