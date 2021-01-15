@@ -14,6 +14,20 @@ Prepare Algorithms Tests
 
 ## Selection Sort
 ![image](https://user-images.githubusercontent.com/72503871/104643445-69f48a00-56e7-11eb-8a59-8e6f44e3d31a.png)
-<script src="https://gist.github.com/danlee1213/665dbda438588af37fc38a5213079998.js"></script>
+```C++
+/***Selection Sort (Ascending Order)***/
+//Can ignore the last number since the number has been sorted before reaches the last number
+for(int i=0; i<n-1; ++i){
+  index = i; //Initialize index as i for every loop
+  for(int j=i+1; j<n; ++j){
+    //Searching the smallest number and store it's number in the variable 'index'.
+    if(a[j] < a[j+1]) index = j;
+  }
+  //Swap numbers
+  temp = a[i];
+  a[i] = temp;
+  a[index] = temp;
+}
+```
 ## Bubble Sort
 ![image](https://user-images.githubusercontent.com/72503871/104643560-90b2c080-56e7-11eb-87c9-8ea5301cabaa.png)
