@@ -14,6 +14,6 @@ Prepare Algorithms Tests
 
 ## Selection Sort
 ![image](https://user-images.githubusercontent.com/72503871/104643445-69f48a00-56e7-11eb-8a59-8e6f44e3d31a.png)
-
+<script src="https://gist.github.com/danlee1213/665dbda438588af37fc38a5213079998.js"></script>
 ## Bubble Sort
 ![image](https://user-images.githubusercontent.com/72503871/104643560-90b2c080-56e7-11eb-87c9-8ea5301cabaa.png)
