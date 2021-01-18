@@ -12,6 +12,12 @@ Prepare Algorithms Tests
 * Local variable -> goes to stack of the memory -> not enough storage for big array
 * Global variable -> goes to data of the memory -> big enough to store big array
 
+## Reverse Integer Overflow
+* If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+```C++
+if (rev > INT_MAX/10 || (rev == INT_MAX / 10 && pop > 7)) return 0;
+if (rev < INT_MIN/10 || (rev == INT_MIN / 10 && pop < -8)) return 0;
+```
 ## Selection Sort
 ![image](https://user-images.githubusercontent.com/72503871/104643445-69f48a00-56e7-11eb-8a59-8e6f44e3d31a.png)
 ```C++
