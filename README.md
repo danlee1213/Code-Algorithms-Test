@@ -66,3 +66,24 @@ for(int i=1; i<n; ++i){
 ```
 ## Merge Sort
 ![image](https://user-images.githubusercontent.com/72503871/105095130-40b96c80-5ae0-11eb-8db5-f47172854ba1.png)
+```C++
+/***Merge Sort (Ascending Order)***/
+int n, m, i, p1=1, p2=1, p3=1;
+scanf("%d", &n);
+for(i=1; i<=n; ++i){
+    scanf("%d", &a[i]);
+}
+scanf("%d", &m);
+for(i=1; i<=m; ++i){
+    scanf("%d", &b[i]);
+}
+while(p1<=n && p2<=m){
+    //Since we handle ascending order in merge sort
+    if(a[p1] < b[p2]){
+       c[p3++] = a[p1++]; 
+    }
+    else c[p3++] = b[p2++];
+}
+while(p1 <= n) c[p3++] = a[p1++]; //Put remainings in 'a' array in c
+while(p2 <= m) c[p3++] = b[p2++]; //Put reaminings in 'b' array in c
+```
