@@ -64,3 +64,5 @@ for(int i=1; i<n; ++i){
   //ex) if i=1, j=0 and j ends when j=-1, then a[j+1] = a[0] in this case.
 }
 ```
+## Merge Sort
+![image](https://user-images.githubusercontent.com/72503871/105095130-40b96c80-5ae0-11eb-8db5-f47172854ba1.png)
