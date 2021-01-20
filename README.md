@@ -31,7 +31,7 @@ for(int i=0; i<n-1; ++i){
   }
   //Swap numbers
   temp = a[i];
-  a[i] = temp;
+  a[i] = a[index];
   a[index] = temp;
 }
 ```
